@@ -1,8 +1,7 @@
-# Hazem Masarani — Portfolio
+# Hazem Masarani — Software Engineering Portfolio
 
-Two role-focused portfolios, built as a lightweight static site:
+A lightweight static portfolio focused on software engineering, distributed
+systems, and AI infrastructure.
 
-- `/software/` — software engineering
-- `/data-science/` — data science and ML systems
-
-Both sites include a tailored, downloadable PDF résumé. The repository deploys to GitHub Pages on every push to `main`.
+The site includes a downloadable PDF résumé and deploys to GitHub Pages on
+every push to `main`.
