@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,6 +6,7 @@
   <meta name="description" content="Implementation and evaluation notes for Hazem Masarani's SSM–Gate parallel inference research.">
   <title>SSM–Gate Parallelism: Implementation and Evaluation — Hazem Masarani</title>
   <link rel="canonical" href="https://hazemmasarani.github.io/portfolio/profile/case-study/">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../../assets/site.css">
 </head>
 <body class="portfolio case-study-page">
@@ -49,12 +50,12 @@
           <p>Under the evaluated configurations, the SSM–Gate approach showed an advantage over conventional tensor parallelism at small batch sizes. Results remain preliminary and depend on the workload and parallel configuration.</p>
         </article>
       </div>
-      <div class="evidence-links" aria-label="Verified source links">
+      <div class="evidence-links" role="group" aria-label="Verified source links">
         <a href="https://github.com/hazemmasarani/mamba-sg-tp" target="_blank" rel="noreferrer">SSM–Gate Repository ↗</a>
         <a href="https://github.com/hazemmasarani/vllm/tree/a2a-single" target="_blank" rel="noreferrer">vLLM Research Branch ↗</a>
         <a href="https://github.com/hazemmasarani/vllm/blob/a2a-single/csrc/libtorch_stable/mamba/selective_scan_gate_fwd.cu" target="_blank" rel="noreferrer">CUDA Gate Source ↗</a>
         <a href="https://github.com/hazemmasarani/vllm/blob/a2a-single/csrc/libtorch_stable/mamba/selective_scan_ssm_fwd.cu" target="_blank" rel="noreferrer">CUDA SSM Source ↗</a>
-        <a href="https://github.com/hazemmasarani/vllm/blob/a2a-single/vllm/model_executor/layers/mamba/ops/mamba_ssm.py" target="_blank" rel="noreferrer">Integration Layer ↗</a>
+        <a href="https://github.com/hazemmasarani/vllm/blob/a2a-single/vllm/model_executor/layers/mamba/ops/mamba_ssm.py" target="_blank" rel="noreferrer">Triton Implementation ↗</a>
         <a href="https://www3.cs.stonybrook.edu/~anshul/icdcs26_ssmtp.pdf" target="_blank" rel="noreferrer">Published Tensor-Parallel Work ↗</a>
       </div>
     </section>

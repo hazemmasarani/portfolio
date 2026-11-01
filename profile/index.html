@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,6 +6,7 @@
   <meta name="description" content="Hazem Masarani researches GPU programming and efficient multi-GPU inference using CUDA, Triton, PyTorch, and NCCL.">
   <title>Hazem Masarani — GPU Programming &amp; Efficient Inference</title>
   <link rel="canonical" href="https://hazemmasarani.github.io/portfolio/profile/">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body class="portfolio">
@@ -36,12 +37,12 @@
       <p>My current research explores tensor parallelism and SSM–Gate separation for Mamba and Mamba-2 language models.</p>
     </div>
     <p class="hero-status"><span class="status-dot" aria-hidden="true"></span>Seeking 2027 internships in GPU software, parallel computing, and inference optimization.</p>
-    <div class="hero-links" aria-label="Profile links">
+    <nav class="hero-links" aria-label="Profile links">
       <a href="../resumes/Hazem%20Masarani%20Resume.pdf" download>Resume</a>
       <a href="https://github.com/hazemmasarani" target="_blank" rel="noreferrer">GitHub</a>
       <a href="https://www.linkedin.com/in/hazem-masarani-8b86931b1/" target="_blank" rel="noreferrer">LinkedIn</a>
       <a href="#research">Research</a>
-    </div>
+    </nav>
   </header>
 
   <main>
@@ -152,11 +153,11 @@
             <a href="https://github.com/hazemmasarani/vllm/tree/a2a-single" target="_blank" rel="noreferrer">Code</a>
             <a href="case-study/">Read Case Study</a>
           </div>
-          <div class="source-links" aria-label="Verified implementation files">
+          <div class="source-links" role="group" aria-label="Verified implementation files">
             <span>Verified files:</span>
             <a href="https://github.com/hazemmasarani/vllm/blob/a2a-single/csrc/libtorch_stable/mamba/selective_scan_gate_fwd.cu" target="_blank" rel="noreferrer">CUDA gate</a>
             <a href="https://github.com/hazemmasarani/vllm/blob/a2a-single/csrc/libtorch_stable/mamba/selective_scan_ssm_fwd.cu" target="_blank" rel="noreferrer">CUDA SSM</a>
-            <a href="https://github.com/hazemmasarani/vllm/blob/a2a-single/vllm/model_executor/layers/mamba/ops/mamba_ssm.py" target="_blank" rel="noreferrer">integration</a>
+            <a href="https://github.com/hazemmasarani/vllm/blob/a2a-single/vllm/model_executor/layers/mamba/ops/mamba_ssm.py" target="_blank" rel="noreferrer">Triton implementation</a>
           </div>
         </article>
 
