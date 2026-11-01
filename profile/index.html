@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Hazem Masarani builds and optimizes multi-GPU inference systems for large language models using PyTorch, NCCL, CUDA, and Triton.">
+  <title>Hazem Masarani - Deep Learning Systems Engineer</title>
+  <link rel="canonical" href="https://hazemmasarani.github.io/portfolio/profile/">
+  <link rel="stylesheet" href="../assets/site.css">
+  <style>
+    .supporting-card { min-height: 260px; background: #eceae1; }
+    .additional-heading { margin: 45px 0 0; font: 500 12px DM Mono, monospace; letter-spacing: .08em; color: var(--muted); }
+    .compact-role { padding-top: 24px; padding-bottom: 24px; }
+    .compact-role h3 { font-size: 21px; }
+  </style>
+</head>
+<body class="portfolio">
+  <nav class="nav">
+    <a class="brand" href="#top">HAZEM / DEEP LEARNING SYSTEMS</a>
+    <div class="nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#publication">Paper</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a class="pill" href="../resumes/Hazem%20Masarani%20Resume.pdf" download>Resume ↓</a>
+    </div>
+  </nav>
+
+  <header class="hero hero-simple" id="top">
+    <p class="kicker">M.S. DATA SCIENCE · STONY BROOK UNIVERSITY · EXPECTED MAY 2027</p>
+    <h1>Hi, I’m Hazem.</h1>
+    <p class="hero-copy">I build and optimize multi-GPU inference systems for large language models, using PyTorch, NCCL, CUDA, and Triton to make state-space models fast and correct.</p>
+    <p class="hero-status"><span class="status-dot"></span>Seeking 2027 deep-learning systems and GPU-software internships.</p>
+  </header>
+
+  <main>
+    <section class="section" id="projects">
+      <div class="section-head label-only-head">
+        <p class="label">01 / SELECTED RESEARCH PROJECTS</p>
+      </div>
+      <div class="project-grid">
+        <a class="card wide card-link featured" href="https://github.com/hazemmasarani/vllm" target="_blank" rel="noreferrer">
+          <p class="meta">LLM INFERENCE SYSTEMS · SOURCE CODE ↗</p>
+          <h3>vLLM SSM-Gate Extension</h3>
+          <p>Extend a vLLM research fork to support SSM-Gate parallelism for Mamba inference. The ongoing work brings a split state-space/gate design into CUDA and Triton kernels within a production-oriented serving stack.</p>
+          <div class="tags"><span>VLLM</span><span>CUDA</span><span>TRITON</span><span>LLM INFERENCE</span></div>
+        </a>
+
+        <a class="card small card-link" href="https://github.com/hazemmasarani/mamba-tp" target="_blank" rel="noreferrer">
+          <p class="meta">DISTRIBUTED GPU SYSTEMS · SOURCE CODE ↗</p>
+          <h3>Tensor Parallelism for Mamba</h3>
+          <p>Implemented distributed Mamba inference by sharding the intermediate dimension across GPUs. Uses NCCL AllReduce for SSM and hidden-state synchronization, supports cached decoding, and automates benchmark sweeps.</p>
+          <div class="tags"><span>PYTORCH DISTRIBUTED</span><span>NCCL</span><span>MULTI-GPU</span><span>BENCHMARKING</span></div>
+        </a>
+
+        <a class="card card-link" href="https://github.com/hazemmasarani/mamba2-tp" target="_blank" rel="noreferrer">
+          <p class="meta">DISTRIBUTED GPU SYSTEMS · SOURCE CODE ↗</p>
+          <h3>Tensor Parallelism for Mamba2</h3>
+          <p>Built tensor-parallel inference for Mamba2 by sharding mixer projections and per-head SSM parameters across GPUs. Validates distributed logits and intermediate activations against a single-GPU baseline for numerical parity.</p>
+          <div class="tags"><span>PYTORCH</span><span>NCCL</span><span>MODEL SHARDING</span><span>VALIDATION</span></div>
+        </a>
+
+        <a class="card card-link supporting-card" href="https://github.com/hazemmasarani/dc3-skew-algorithm" target="_blank" rel="noreferrer">
+          <p class="meta">SUPPORTING PERFORMANCE WORK · SOURCE CODE ↗</p>
+          <h3>DC3 / Skew Benchmark Suite</h3>
+          <p>Implemented naive, doubling, and DC3 suffix-array algorithms in C++ and Python, with reproducible runtime and memory benchmarks, correctness tests, and practical-versus-theoretical analysis.</p>
+          <div class="tags"><span>C++</span><span>ALGORITHMS</span><span>PERFORMANCE ANALYSIS</span></div>
+        </a>
+      </div>
+      <div class="repo-cta"><a href="https://github.com/hazemmasarani?tab=repositories" target="_blank" rel="noreferrer">EXPLORE ALL GITHUB REPOSITORIES ↗</a></div>
+    </section>
+
+    <section class="section paper" id="publication">
+      <div class="section-head label-only-head">
+        <p class="label">02 / PUBLICATION</p>
+      </div>
+      <div class="paper-box">
+        <p class="meta">IEEE ICDCS 2026 · PREPRINT FEBRUARY 2026</p>
+        <h2>Scaling State-Space Models on Multiple GPUs with Tensor Parallelism</h2>
+        <p>Co-authored a communication-efficient tensor-parallel design for selective state-space-model inference. The work studies state caching across prefill and decode, locality-preserving sharding of packed mixer parameters, quantized AllReduce, and the correctness and latency trade-offs of multi-GPU execution.</p>
+        <p class="authors">Anurag Dutt · Nimit Shah · <strong>Hazem Masarani</strong> · Anshul Gandhi</p>
+        <div class="paper-actions">
+          <a href="https://arxiv.org/abs/2602.21144" target="_blank" rel="noreferrer">ABSTRACT ↗</a>
+          <a href="https://arxiv.org/pdf/2602.21144" target="_blank" rel="noreferrer">PDF ↗</a>
+          <a href="https://github.com/hazemmasarani/mamba2-tp" target="_blank" rel="noreferrer">RELATED CODE ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="section-head label-only-head">
+        <p class="label">03 / EXPERIENCE</p>
+      </div>
+      <div class="timeline">
+        <article class="role">
+          <p class="meta">OCT 2025 — PRESENT</p>
+          <div>
+            <h3>Graduate Research Fellow · PACELab, Stony Brook University</h3>
+            <p>Research efficient multi-GPU inference for state-space language models with Prof. Anshul Gandhi. Implement tensor-parallel Mamba and Mamba-2 inference with PyTorch Distributed and NCCL; benchmark latency, throughput, and correctness on NVIDIA A6000 and A100 GPUs; and extend a vLLM research fork with CUDA and Triton SSM-Gate kernels.</p>
+          </div>
+        </article>
+
+        <article class="role">
+          <p class="meta">SEP 2026 — PRESENT</p>
+          <div>
+            <h3>Technical Writer, LLM Inference · Parasail</h3>
+            <p>Write and review developer-facing technical content on inference performance, throughput-latency trade-offs, speculative decoding, batching, and offline inference. Ground explanations and performance claims in research papers, benchmarks, and framework documentation.</p>
+          </div>
+        </article>
+
+        <article class="role">
+          <p class="meta">JUL 2023 — SEP 2024</p>
+          <div>
+            <h3>Automation &amp; Network Data Engineer · e&amp;</h3>
+            <p>Promoted from Junior to Senior Engineer while building Python pipelines and monitoring tools for telecom operations. Integrated alarm, topology, outage, and maintenance data for root-cause analysis; deployed a Dockerized OpenStreetMap tile server; maintained SQL pipelines; and mentored incoming engineers in Python, SQL, and algorithms.</p>
+          </div>
+        </article>
+
+        <p class="additional-heading">ADDITIONAL EXPERIENCE</p>
+
+        <article class="role compact-role">
+          <p class="meta">AUG 2024 — PRESENT</p>
+          <div>
+            <h3>Prompt Evaluation &amp; Response Optimization · Outlier</h3>
+            <p>Evaluate AI-generated responses and document quality feedback for RLHF projects.</p>
+          </div>
+        </article>
+
+        <article class="role compact-role">
+          <p class="meta">SEP 2024 — JUN 2025</p>
+          <div>
+            <h3>Computer Teacher · Al-Madinah School Queens</h3>
+            <p>Taught foundational computing through practical lessons tailored to students with varied experience levels.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-head label-only-head">
+        <p class="label">04 / ABOUT</p>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p class="big-copy">I’m a graduate researcher building efficient deep-learning systems for multi-GPU inference. My work combines parallel algorithms, GPU communication, numerical validation, and performance benchmarking to make large-model serving faster and more reliable.</p>
+          <div class="education">
+            <h3>Education</h3>
+            <p><strong>Stony Brook University</strong><br>M.S. in Data Science · GPA: 3.96/4.00 · Expected May 2027</p>
+            <p><strong>Alexandria University</strong><br>B.Sc. in Computer &amp; Communication Engineering · GPA: 3.47/4.00</p>
+          </div>
+        </div>
+        <div>
+          <h3>Programming</h3>
+          <div class="skills"><span>Python</span><span>C / C++</span><span>CUDA</span><span>Triton</span><span>SQL</span></div>
+          <h3>Deep Learning &amp; Parallelism</h3>
+          <div class="skills"><span>PyTorch</span><span>vLLM</span><span>PyTorch Distributed</span><span>NCCL</span><span>Tensor Parallelism</span></div>
+          <h3>Systems &amp; Tools</h3>
+          <div class="skills"><span>Linux</span><span>Docker</span><span>Slurm</span><span>Git</span><span>PostgreSQL</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-links">
+        <a href="mailto:masarani.hazem@gmail.com">EMAIL ME</a>
+        <a href="https://www.linkedin.com/in/hazem-masarani-8b86931b1/" target="_blank" rel="noreferrer">LINKEDIN</a>
+        <a href="https://github.com/hazemmasarani" target="_blank" rel="noreferrer">GITHUB</a>
+        <a href="../resumes/Hazem%20Masarani%20Resume.pdf" download>DOWNLOAD RESUME</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot"><span>© 2026 HAZEM MASARANI</span><span>STONY BROOK, NEW YORK</span></footer>
+  <script src="../assets/site.js"></script>
+</body>
+</html>
